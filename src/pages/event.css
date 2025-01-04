@@ -1,0 +1,132 @@
+.yellowboxone {
+    background-color: orange;
+    width: 100%;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.blackboxone {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.whiteboxone {
+    background-color: white;
+    width: 100%;
+    color: orange;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.yellowboxtwo {
+    background-color: orange;
+    width: 100%;
+    color: black;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.blackboxtwo {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.wedding {
+    margin-top: -50px;
+    font-size: 80px;
+    font-family: 'montez';
+}
+
+.weddingpara {
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.button {
+    margin-top: -50px;
+}
+
+.bridal {
+    font-family: 'montez';
+    font-size: 80px;
+    margin-top: 0px;
+}
+
+.brideimg {
+    margin-top: -300px;
+}
+
+.birthimg {
+    margin-top: -400px;
+}
+
+.birthtag {
+    margin-Top: -50px;
+    font-family: 'montez';
+    font-size: 80px;
+}
+
+.birthpara {
+    padding-left: 40px;
+    margin-top: 0px;
+}
+
+.birthbutton {
+    margin-right: 150px;
+}
+
+.babyimg {
+    margin-top: -300px;
+}
+
+.babytag {
+    font-size: 80px;
+    font-family: 'montez';
+    margin-top: 0px;
+}
+
+@media (max-width:650px) {
+    .wedding {
+        margin-top: 0px;
+    }
+    .weddingpara {
+        padding-left: 10px;
+    }
+    .button {
+        margin-top: 0px;
+    }
+    .brideimg {
+        margin-top: 20px;
+    }
+    .bridal {
+        margin-top: -50px;
+    }
+    .birthimg {
+        margin-top: -100px;
+    }
+    .birthtag {
+        margin-top: 10px;
+    }
+    .birthpara {
+        padding-left: 0px;
+    }
+    .birthbutton {
+        margin-right: 0px;
+    }
+    .babyimg {
+        margin-top: 0px;
+    }
+    .babytag {
+        margin-top: -150px;
+    }
+    .yellowboxone {
+        padding-top: 0px;
+    }
+}

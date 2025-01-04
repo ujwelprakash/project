@@ -1,0 +1,26 @@
+/* .n {
+    background-color: black;
+    height: 140px;
+}
+
+#basic-navbar-nav {
+    height: 100px;
+}
+
+Nav {
+    padding-top: 0px;
+    background-color: black;
+}
+
+@media (max-width:650px) {
+    Nav {
+        padding-top: 200px;
+        background-color: black;
+    }
+    .n {
+        height: 240px;
+    }
+    #basic-navbar-nav {
+        height: 500px;
+    }
+} */

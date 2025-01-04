@@ -1,0 +1,62 @@
+/* .plan {
+    position: relative;
+    margin-top: -300px;
+    color: white;
+    font-size: 75px;
+    font-family: 'montez';
+} */
+
+.venues {
+    background-color: black;
+    margin-top: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.venueone {
+    background-color: white;
+    width: 400px;
+    height: 370px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.cardoneimage {
+    margin-top: 10px;
+    width: 90%;
+    height: 180px;
+}
+
+.ratebox {
+    background-color: green;
+    width: 48px;
+    height: 28px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -25px;
+}
+
+.adding {
+    background-color: grey;
+    width: 400px;
+    height: 370px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 30%;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.line {
+    width: 350px;
+    height: 0.1px;
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+/* .there{margin-left: 10px;} */

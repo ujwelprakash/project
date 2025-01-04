@@ -1,0 +1,27 @@
+.rect {
+    width: 100%;
+    background-color: white;
+}
+
+.recttwo {
+    box-shadow: 5px 5px 35px 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1000px;
+}
+
+.relogin {
+    width: 500px;
+    height: 650px;
+    background-image: url('../images/reglogin.jpg');
+    background-size: cover;
+}
+
+.data {
+    width: 500px;
+    height: 650px;
+}
+
+.reg {
+    color: black;
+}

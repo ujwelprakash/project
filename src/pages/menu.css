@@ -1,0 +1,108 @@
+.foodimage {
+    background-image: url('../images/food.png');
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.maincategory {
+    background-color: black;
+    width: 100%;
+}
+
+.whitebox {
+    background-color: white;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.standardmenu {
+    color: orange;
+    font-size: 30px;
+}
+
+.traditional {
+    color: orange;
+    float: left;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 40px;
+}
+
+.specialoffer {
+    background-color: black;
+    width: 100%;
+}
+
+.lunch {
+    color: #ffa500;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.itemone {
+    width: 65px;
+    height: 65px;
+    border-radius: 35px 35px 35px 35px;
+}
+
+.welcomedrink {
+    color: orange;
+    font-size: 20px;
+}
+
+.mango {
+    color: orange;
+    text-align: justify;
+    padding-left: 150px;
+    margin-top: -30px;
+}
+
+.dinnermenu {
+    background-color: white;
+    width: 120%;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
+.lunchmenu {
+    background-color: white;
+    width: 120%;
+    border-radius: 10px 0px 0px 10px;
+    margin-bottom: 100px;
+}
+
+#well {
+    margin-left: -50px;
+}
+
+@media(max-width:650px) {
+    .whitebox {
+        width: 390px;
+        margin-left: 30px;
+    }
+    .traditional {
+        padding-left: 30px;
+        width: 350px;
+    }
+    .lunch {
+        padding: 0px;
+    }
+    .lunchmenu {
+        margin-right: 100px;
+        width: 100%;
+    }
+    .mango {
+        padding-left: 30px;
+        margin-top: 5px;
+        width: 450px;
+    }
+    .dinnermenu {
+        margin-right: 100px;
+        width: 100%;
+    }
+    #well {
+        margin-left: 0px;
+    }
+}
