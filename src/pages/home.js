@@ -166,46 +166,7 @@ const handleSubmit  =(e)=>{
         </div> 
 
     
-        {/* <section id="/" className="section1">
-        <div   className = " yourevent" >
-        <div className = "row" >
-        <div  className = "col-md-6" >
-        <p style = {
-            { marginTop: "130px", fontSize: "40px", color: "orange" } } > Get A Free Extimate Now </p> 
-            <p style = {
-            { fontSize: "55px" } } > Book Your Event Now </p> 
-            </div>
-
-        <div className = "col-md-6" >
-        
-        <form  onSubmit={handleSubmit}  ref={sectionRef} >
-
-        <input  style = {{ marginTop: "80px",color:"gray" } } 
-        type="text" placeholder="Enter Name" autoComplete="off" name="name" className="form-control rounded-0" onChange={(e)=>setName(e.target.value)} /> <br/>
-
-        <input  style = {{ marginTop: "40px" }}
-        type="email" placeholder="Enter Email" autoComplete="off" name="email" className="form-control rounded-0" onChange={(e)=>setEmail(e.target.value)}
-        /> <br/>
-
-        <input style = {{ marginTop: "40px" } } 
-        type="password" placeholder="Enter Password" autoComplete="off" name="password" className="form-control rounded-0" onChange={(e)=>setPhone(e.target.value)}
-        /> <br/>
-
-        <input style = {{marginTop: "40px" } }
-         type="phone" placeholder="Enter Phone" autoComplete="off" name="password" className="form-control rounded-0" onChange={(e)=>settext(e.target.value)}
-        /> <br/>
-
-    
-        <button  style = {{ width: "100px", marginTop: "60px", marginLeft: "-300px", backgroundColor: "orange", borderRadius: "15px 15px 15px 15px" } } > submit </button> 
-            
-            </form> 
-            
-            </div> 
-            </div>
-            </div>
-
-
-            </section> */}
+       
 
             <section id="/" className="section1" style={{ padding: '50px 0' }}>
             <div className="container-fluid yourevent">
