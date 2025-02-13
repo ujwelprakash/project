@@ -18,68 +18,7 @@ import Adminlogin from './pages/login';
 
 
 
-// const PrivateRoute = ({ element, isAuthenticated }) => {
-//     return isAuthenticated ? element : <Navigate to="/Adminlogin" />;
-//   };
 
-//   function App() {
-//     const [isAuthenticated, setAuthenticated] = useState(false);
-//     const handlelogin = () => {
-//         setAuthenticated(true); 
-//     };
-//     const handlelogout = () => {
-//         setAuthenticated(false);
-//     };
-
-//     return ( <div className = "App" >
-
-
-
-
-
-//             <Navbarone /> 
-
-//             <Routes>
-
-//            <Route path = '/' element = { < Home /> }/>
-
-
-//            <Route path = 'specific' element = { < Home /> }/>
-
-//             <Route path = 'About' element = { < About /> }/>
-
-//             <Route path = 'Venue'element = { < Venue /> }/>
-
-//             <Route path = 'Events' element = { < Events /> }/>
-
-//             <Route path = 'Menu'element = { < Menu /> } />
-
-//             <Route path = 'Customer' element = { < Customer /> } />
-
-//             <Route path = '/book-now/:number'element = { < Booklists /> }/>
-
-//             <Route path = '/register' element = { < Register /> } />
-
-
-
-//             <Route path="/Dashboard" element={<PrivateRoute element={<Dashboard />}
-//              isAuthenticated={isAuthenticated} />} />
-
-//             <Route path="/Adminlogin" element={<Adminlogin onLogin={handlelogin} isAuthenticated={isAuthenticated} />}/>
-
-//             </Routes> 
-
-//             <Footer/>
-
-
-
-//                     </div>
-//                 );
-//             }
-
-
-
-//             export default App;
 
 const PrivateRoute = ({ element, isAuthenticated }) => {
     return isAuthenticated ? element : < Navigate to = "/Adminlogin" / > ;
@@ -95,68 +34,54 @@ function App() {
 
     return (
 
-        <
-        div className = "App" > { /* Navbar Component */ } <
-        Navbarone isAuthenticated = { isAuthenticated }
-        handleLogin = { handleLogin }
-        handleLogout = { handleLogout }
+        <div className="App">
+        {/* Navbar Component */}
+        <Navbarone
+          isAuthenticated={isAuthenticated}
+          handleLogin={handleLogin}
+          handleLogout={handleLogout}
         />
-
-        { /* Routes Configuration */ } <
-        Routes > { /* Public Routes */ } <
-        Route path = "/"
-        element = { < Home / > }
-        /> <
-        Route path = "/specific"
-        element = { < Home / > }
-        /> <
-        Route path = "/About"
-        element = { < About / > }
-        /> <
-        Route path = "/Venue"
-        element = { < Venue / > }
-        /> <
-        Route path = "/Events"
-        element = { < Events / > }
-        /> <
-        Route path = "/Menu"
-        element = { < Menu / > }
-        /> <
-        Route path = "/Customer"
-        element = { < Customer / > }
-        /> <
-        Route path = "/book-now/:number"
-        element = { < Booklists / > }
-        /> <
-        Route path = "/register"
-        element = { < Register / > }
-        />
-
-        { /* Admin Protected Route */ } <
-        Route path = "/Dashboard"
-        element = { <
-            PrivateRoute
-            element = { < Dashboard / > }
-            isAuthenticated = { isAuthenticated }
-            />
-        }
-        />
-
-        { /* Admin Login Route */ } <
-        Route path = "/Adminlogin"
-        element = { <
-            Adminlogin
-            onLogin = { handleLogin }
-            isAuthenticated = { isAuthenticated }
-            />
-        }
-        /> <
-        /Routes>
-
-        { /* Footer Component */ } <
-        Footer / >
-        <
-        /div>
+      
+        {/* Routes Configuration */}
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/specific" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Venue" element={<Venue />} />
+          <Route path="/Events" element={<Events />} />
+          <Route path="/Menu" element={<Menu />} />
+          <Route path="/Customer" element={<Customer />} />
+          <Route path="/book-now/:number" element={<Booklists />} />
+          <Route path="/register" element={<Register />} />
+      
+          {/* Admin Protected Route */}
+          <Route
+            path="/Dashboard"
+            element={
+              <PrivateRoute
+                element={<Dashboard />}
+                isAuthenticated={isAuthenticated}
+              />
+            }
+          />
+      
+          {/* Admin Login Route */}
+          <Route
+            path="/Adminlogin"
+            element={
+              <Adminlogin
+                onLogin={handleLogin}
+                isAuthenticated={isAuthenticated}
+              />
+            }
+          />
+        </Routes>
+      
+        {/* Footer Component */}
+        <Footer />
+      </div>
+      
 
     );
 }
