@@ -9,7 +9,8 @@ import event4 from '../images/event4.jpg'
 
 
 function Events() {
-    return ( <div className = "container-fluid" >
+    return ( 
+        <div className = "container-fluid" >
 
         <div className = "row gy-4 text-center" >
 
@@ -59,11 +60,6 @@ function Events() {
         
            <div className = "button col-md-11" >
 
-        {/* <Link to = "/book-now/7"
-        className = 'btn btn-primary'
-        style = {
-            { backgroundColor: "orange", borderRadius: "15px 15px 15px 15px", } } > Book Now </Link>   */}
-
         </div>
 
         </div> 
@@ -110,11 +106,6 @@ function Events() {
         <div style = {
             { marginLeft: "50px" } }
         className = "col-md-12 mt-3" >
-
-        {/* <Link to = "/book-now/8"
-        className = 'btn btn-primary'
-        style = {
-            { backgroundColor: "black", color: "orange", borderRadius: "15px 15px 15px 15px" } } > Book Now </Link>  */}
             
             </div >
 
@@ -149,12 +140,6 @@ function Events() {
 
         </div> 
         
-         {/* <Link to = "/book-now/9"
-        className = 'birthbutton btn btn-primary'
-        style = {
-            { backgroundColor: "white", color: "black", borderRadius: "15px 15px 15px 15px" } } >
-        Book Now  </Link>     */}
-        
         </div>  
         
         </div >
@@ -188,10 +173,6 @@ function Events() {
         for the mom, as well as to bring together a lot of the items needed to take care of a baby as gifts to the new mom. </p>   
 
         </div>
-
-        {/* <Link to = "/book-now/10"
-        className = '  btn btn-primary'
-        style = {{  backgroundColor: "orange", borderRadius: "15px 15px 15px 15px" } } > Book Now 1 </Link>   */}
 
         </div>  
         </div>
