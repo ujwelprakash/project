@@ -20,60 +20,50 @@ function Dashboard() {
         }
     };
 
-    return ( <
-        div className = "container mt-5 d-flex flex-column min-vh-100" >
-        <
-        div className = "flex-grow-1" >
-        <
-        div className = "table-responsive" >
-        <
-        table className = "table table-hover table-bordered" >
-        <
-        thead className = "table-dark" >
-        <
-        tr >
-        <
-        th > Name < /th> <
-        th > Email < /th> <
-        th > Phone < /th> <
-        th > Text < /th> <
-        th > Action < /th> <
-        /tr> <
-        /thead> <
-        tbody > {
-            estimate && estimate.length > 0 ? (
-                estimate.map((user) => ( <
-                    tr key = { user._id } >
-                    <
-                    td > { user.name } < /td> <
-                    td > { user.email } < /td> <
-                    td > { user.phone } < /td> <
-                    td > { user.text } < /td> <
-                    td >
-                    <
-                    button onClick = {
-                        () => deleteUser(user._id) }
-                    className = "btn btn-sm btn-danger" >
-                    Delete <
-                    /button> <
-                    /td> <
-                    /tr>
-                ))
-            ) : ( <
-                tr >
-                <
-                td colSpan = "5"
-                className = "text-center" >
-                No users found <
-                /td> <
-                /tr>
-            )
-        } <
-        /tbody> <
-        /table> <
-        /div> <
-        /div> <
-        /div>
+    return ( <div className="container mt-5 d-flex flex-column min-vh-100">
+        <div className="flex-grow-1">
+            <div className="table-responsive">
+                <table className="table table-hover table-bordered">
+                    <thead className="table-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Text</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            estimate && estimate.length > 0 ? (
+                                estimate.map((user) => (
+                                    <tr key={user._id}>
+                                        <td>{user.name}</td>
+                                        <td>{user.email}</td>
+                                        <td>{user.phone}</td>
+                                        <td>{user.text}</td>
+                                        <td>
+                                            <button 
+                                                onClick={() => deleteUser(user._id)} 
+                                                className="btn btn-sm btn-danger">
+                                                Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="5" className="text-center">
+                                        No users found
+                                    </td>
+                                </tr>
+                            )
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     )
 
 }
